@@ -1,0 +1,231 @@
+<!DOCTYPE  >
+<html  lang="ar" dir="rtl">
+    <head>
+        <title>tamplate 3 using bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+		    <!-- fonts -->
+	    	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"	rel="stylesheet"/>
+		    <!-- font-awesome library -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+
+        <!-- my style -->
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+          *{
+            box-sizing: border-box;
+          }
+  
+          .one h2::after{
+            content: "";
+            height: 90%;
+            width: 3px;
+            background-color:lightskyblue ;
+            right: 4%;
+            top:10px
+          }
+          .one h2{
+            text-align: right;
+            padding-right: 5%;
+          }
+          .one ul{
+            list-style: none;
+            padding: 25px 0 35px;
+            margin: 0;
+          }
+          .one ul li{
+           display: inline-block;
+           transition: all .3s;
+           text-align: center;
+           cursor: pointer;
+          }
+          .one ul li a{
+            background-color: darkblue;
+            width: 27px;
+            height: 27px;
+            display:block;
+            transition: all .3s;
+            text-decoration: none;
+          }
+          .one i{
+            margin: 5px;
+            color: white;
+
+          }
+          .one-main{
+            width: 50%;
+            display: block;
+            margin: auto;
+          }
+         .details{
+           background-image: url(img/details-bg.png);
+         }
+         .details p{
+           padding: 4%;
+           color: white;
+           text-align: center;
+           font-size: 18px;
+         }
+         .slider-img img{
+           width: 24%;
+           opacity: .7;
+           transition: all .5s;
+         }
+         .active{
+           animation: active-img .6s forwards ease-in-out ;
+           
+         }
+         @keyframes active-img {
+           from{
+          transform: scale(1 ,1);
+            opacity: .7;
+           }
+           to{
+            opacity: 1;
+            transform: scale( 1.3 ,1.1);
+           }
+         }
+     
+        
+          </style>
+    </head>
+    <body>
+      <!-- start navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="nav logo"></a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">الرئيسيه <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">عن ابداع تك</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                خدماتنا
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">اعمالنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" >الوظائف</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#" >اراء عملائنا</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary">طلب عرض سعر</button>
+        </div>
+      </nav>
+      <!-- ./end navbar -->
+     
+      <!-- one -->
+      <section class="one mb-4">
+        <h2 class="col-12 mb-5 pt-3 general-h"> تطبيق وان </h2>
+        <div class="container-fluid">
+          <div class="row justify-content-around">
+            <div class="col-12">
+              <img src="img/main.png" class="one-main">
+            </div>
+            <h2 class="col-12 mb-5 pt-3 general-h"> تفاصيل المشروع </h2>
+            <div class="col-12 details">
+              <p>
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                نيولا باراياتيور أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت 
+                
+                أيكسسيبتيور ساينت أوككايكات ,سيونت ان كيولبا
+
+                كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.
+
+              </p>
+            </div>
+            <div class="w-100"></div>
+            <h2 class="col-12 mb-5 pt-3 mt-5 general-h "> خدلك لفه </h2>
+            <div class="w-100"></div>
+            
+            <ul >
+              <li><a id="right" class="slider-details" ><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+              <li><a id="left" class="slider-details"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="w-100"></div>
+            <div class="slider-img" >
+              <img class="active" src="img/slide-one.png">
+              <img src="img/Slider-two.png">
+              <img src="img/slider-three.png">
+              <img src="img/Slider-four.png">
+
+            </div>
+
+
+          </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- ./one -->
+
+
+
+    
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <section class="my-3 sec-right col-12 col-md-6">
+              <img src="img/footer-vec.jpg">
+            </section>
+            <section class="my-3 sec-left col-12 col-md-6">
+              <div>
+                <img src="img/footer-logo3.png" alt="footer logo">
+              </div>
+              <p class="py-4">المنصوره-حى الجامعه-تقسيم الزعفران</p>
+              <i class="pl-3 fa fa-whatsapp" aria-hidden="true"></i>
+              <i class="pl-3 fa fa-twitter" aria-hidden="true"></i>
+              <i class="pl-3 fa fa-facebook" aria-hidden="true"></i>
+              <i class="pl-3 fa fa-github" aria-hidden="true"></i>
+
+
+            </section>
+          </div>
+        </div>
+      </footer>
+
+      <!-- ./footer -->
+       <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+ 
+        <script src="js/index.js"></script>
+    </body>
+</html>
