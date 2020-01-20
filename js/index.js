@@ -1,51 +1,60 @@
-// $(function() {
-// 	var navH = $("nav").innerHeight();
-// 	var windowH = $(window).height();
 
-//     $(".first-sec").height(windowH - navH);
-// 	console.log(navH +"dd" +windowH);
-    
-// });
+
+$(document).ready(function(){
+
+    $('.slick-carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        rtl:true,
+  });
+  
+  });
+
+
 
 
 var 
     imageOne    =   document.querySelectorAll(".slider-img img"),
     sliderRight =   document.getElementById("right"),
     sliderLeft =   document.getElementById("left"),
-    counter=0 , i;
+    count=0 , i;
 
 
+
+
+    // document.getElementById("right").addEventListener("click", displayDate);
  
     sliderLeft.onclick=function(){
         
-        if(counter==3){
-            counter=3;       
+        if(count==3){
+            count=3;       
         }
-        else if (counter>=0  && counter<3)
+        else if (count>=0  && count<3)
         {
-            counter++;
+            count++;
         }
         
         for(i = 0 ; i < imageOne.length ; i++){
             imageOne[i].classList.remove("active");    
         }
-        imageOne[counter].classList.add("active"); 
+        imageOne[count].classList.add("active"); 
     }
 
 
     sliderRight.onclick=function(){        
-        if(counter==0){
-            counter=0;
+        if(count==0){
+            count=0;
         }
         
-        else if (counter<=3 && counter>0)
+        else if (count<=3 && count>0)
         {
-            counter--;
+            count--;
         }
         for(i = 0 ; i < imageOne.length ; i++){
             imageOne[i].classList.remove("active");  
         }
-        imageOne[counter].classList.add("active");
+        imageOne[count].classList.add("active");
         
     }
     

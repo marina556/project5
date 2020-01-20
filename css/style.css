@@ -4,12 +4,24 @@ html{
 	
 	
 }
+
+
 .container-fluid{
 	padding: 0;
 }
 button{
 	cursor: pointer;
 }
+
+@media (min-width: 992px){
+
+	.navbar-expand-lg .navbar-toggler {
+		display: inline-block;
+		margin-right: auto;
+	}
+	
+}
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -81,18 +93,21 @@ font-weight: bold;
 	background-repeat: no-repeat;
     background-size: cover;
 	background-position: center;
+	height: 60%;
+	/* padding: 10px; */
 	
 }
 .we-offer-item{
 	background-color: white;
-	padding: 5%;
-	/* height: 60%; */
-	margin: 15% 1%;
+	/* padding: 5%; */
+	/* /* height: 60%;  */
+	/* margin: 15% 1%; */
 	border-radius: 5%;
 	text-align: center;
 }
 .offer-img img{
 	width: 60%;
+	margin: auto;
 }
 
 .we-offer h6{
