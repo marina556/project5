@@ -13,14 +13,14 @@ button{
 	cursor: pointer;
 }
 
-@media (min-width: 992px){
+/* @media (min-width: 992px){
 
 	.navbar-expand-lg .navbar-toggler {
 		display: inline-block;
 		margin-right: auto;
 	}
 	
-}
+} */
 
 *{
 	box-sizing: border-box;
